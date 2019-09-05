@@ -14,7 +14,7 @@ Use the dig command to verify the status of DNSSec function. Replace the DNS ser
 Example, 
 `dig @8.8.8.8 www.apnic.net. A +dnssec +multiline`
 
-As for exemplifying, my test result is in attached file `[dig.test.recursive.DNSSec](https://github.com/TomHsiung/bind/blob/master/dig.test.recursive.DNSSec)`.
+As for exemplifying, my test result is in attached file [dig.test.recursive.DNSSec](https://github.com/TomHsiung/bind/blob/master/dig.test.recursive.DNSSec).
 
 # Notice
 1) After completion of your editing, make sure to run the command `sudo named-checkconf` to check if something pertinent to configuration is wrong. 
