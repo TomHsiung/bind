@@ -9,7 +9,7 @@ A powerful DNS server
 Install bind9, then edit the files under `/etc/bind` and `/etc/default`, respectively.
 
 # To validity the DNSSec function
-Use the dig command to verify the status of DNSSec function. Replace the DNS server's IP address to your own DNS server's.
+Use the dig command to verify the status of DNSSec function. Replace the DNS server's IP address to your own DNS server's. 
 `dig @8.8.8.8 www.apnic.net. A +dnssec +multiline`
 
 # Notice
