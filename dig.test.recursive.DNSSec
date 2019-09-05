@@ -1,0 +1,28 @@
+; <<>> DiG 9.10.6 <<>> www.apnic.net. A +dnssec +multiline
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47692
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 512
+;; QUESTION SECTION:
+;www.apnic.net.		IN A
+
+;; ANSWER SECTION:
+www.apnic.net.		51 IN CNAME www.apnic.net.cdn.cloudflare.net.
+www.apnic.net.		51 IN RRSIG CNAME 13 3 300 (
+				20191004005438 20190903235438 18494 apnic.net.
+				Y+4LckklgmUXmh20UjhREESOBEKzyMDflTIdC8Gts3uw
+				KevmajH1d8XFLffqTVlsh9ibSlYB4eA225owAmi0dA== )
+www.apnic.net.cdn.cloudflare.net. 299 IN A 104.20.36.173
+www.apnic.net.cdn.cloudflare.net. 299 IN A 104.20.22.173
+www.apnic.net.cdn.cloudflare.net. 299 IN RRSIG A 13 6 300 (
+				20190906145632 20190904125632 34505 cloudflare.net.
+				z7xM2nTDbRGC69DrWXMjhCpd3XCmrYs1srYr1AHdDr5V
+				JALA4O+06/8HzoCbUbDcYZ5S9iNtZrp4uwumEsYCig== )
+
+;; Query time: 209 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Thu Sep 05 21:57:02 CST 2019
+;; MSG SIZE  rcvd: 332
