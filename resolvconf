@@ -1,0 +1,7 @@
+# A Bind service to configure /etc/resolv.conf, resolvconf package installation needed.
+
+# Step 1
+apt install resolvconf
+
+# Step 2
+systemctl enable --now named-resolvconf.service
